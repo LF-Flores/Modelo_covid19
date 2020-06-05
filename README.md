@@ -31,6 +31,14 @@ Para mayor información del modelo y cómo se usan estos parámetros, se anexa e
 
 En ese código se pueden ver las notas explicativas de cada parte del código y cambiar lo que se desee para probar el rendimiento del modelo con distintos países del archivo **TS.csv** utilizando la función *Rendimiento* dentro del código. Cabe mencionar que el modelo rendirá mal para países con crecimiento bajo en los primeros días, pues asume que el virus comenzó a ser muestreado en la misma cantidad de días posteriores al primer caso confirmado, y no es el caso en todos, siendo uno extremo los estados unidos. Esto puede ser solucionado con una transformación de los datos.
 
+Lo anterior se ilustra en el gráfico de US:
+
+![](Ejemplos/US.png)
+
+donde los puntos discretos son la aproximación del modelo mientras que la linea sólida son los datos. Esto quiere decir que el modelo estima que los casos en estados unidos tuvieron que haber crecido de esa manera de haberse comenzado a muestrear adecuadamente desde los días subsecuentes al primer caso. Esto se contrasta con el ejemplo de el salvador:
+
+![](Ejemplos/El.Salvador.png)
+
 Este y otros ejemplos se colocan en la carpeta **Ejemplos**, así como también poder generar propios ejemplos con distintos kernels y parámetros en ellos ejecutando el código en máquina propia. 
 
-Este modelo será eventualmente actualizado.
+**Este modelo será eventualmente actualizado.**
